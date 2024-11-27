@@ -15,7 +15,7 @@ module.exports = async(app) =>{
             res.status(200).send({
                 status:true,
                 message:`API Gateway is live at port :: ${process.env.PORT}` + ` CI-CD Implemented Successfully.`,
-                response: "Implemented Github Webhook Triggers for CI-CD Pipeline"
+                response: "Implemented Github Webhook Triggers for CI-CD Pipeline."
             });
         })
         
@@ -29,7 +29,7 @@ module.exports = async(app) =>{
         app.use('*',(req,res,next)=>{
             res.status(404).send({
                 status:'Failure',
-                message:'Error 404 Microservice Route not found.'
+                message:'Error 404 | Microservice Route not found.'
             })
         })
 
