@@ -14,7 +14,8 @@ module.exports = async(app) =>{
         app.get('/',async(req,res)=>{
             res.status(200).send({
                 status:true,
-                message:`API Gateway is live at port :: ${process.env.PORT}`
+                message:`API Gateway is live at port :: ${process.env.PORT}` + ` CI-CD Implemented Successfully.`,
+                response: "Implemented Github Webhook Triggers for CI-CD Pipeline"
             });
         })
         
