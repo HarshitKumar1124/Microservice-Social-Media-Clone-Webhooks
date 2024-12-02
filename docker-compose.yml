@@ -4,3 +4,8 @@ services:
     build: ./api-gateway
     ports:
       - "8000:8000"
+
+  postService:
+    build: ./post-service
+    ports:
+      - "8002:8002"
